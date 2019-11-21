@@ -1,0 +1,92 @@
+</!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <link rel="stylesheet" type="text/css" href="style/style.css"><!--connects html document with css file-->
+  <link rel="shortcut icon" type="image/x-icon" href="images/icon.png">
+  <title> Home Page</title>
+</head>
+<body>
+  <div id="page-wrap">
+<header>
+<a href="index.html" title="Home" id="logo"> Vynil.com</a>
+<span class="right"><span class="contact"><a href="reg.html" title="shopping cart"><img src="images/cart.png"></a></span>
+<span class="contact"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="images/login.png"></button>
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src=" images/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+        <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<script>
+
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</header>
+<div id="wrapper">
+  <div id="articles">
+    <article>
+      <img src="images/vynil.jpg" alt="image" title="image">
+      <h2>Vynil</h2>
+      <p>We live in an era of rapidly developing technologies, for which we all must keep pace. The main marketing assistant in the 21st century is the Internet, or rather online stores. You can buy and sell everything, without exception. Online shopping has become more profitable and easier for people.
+The music industry has always been a profitable investment, but every year the sale of music, music albums has been simplified. Everyone can download as many songs as they like, choose the ones they like and not worry about the work put into each song.
+and let's recall the stories of our parents about what each new album of their favorite group meant to them.<span id="dots">...</span><span id="more">As they stood in line for records. And after all, few of them consider this scarce time an undesirable memory from their youth.
+If we recall fashion and what is relevant in 2019, the first thing that comes to mind is a return to the era of the eighties and nineties. The whole world finds this era of fashion and music lovers close to themselves.
+The relevance and difference of vinyl records from modern music gadgets gives the records an advantage and uniqueness. That is why I decided to create a simple and convenient site where everyone can find music to their liking, also on vinyl media.
+There are two markets for vinyl shawls: the primary market (albums of contemporary artists, retro artists in new editions) and the secondary market (using old and rare editions, rare and unique in their kind). This site shows a catalog of the primary market, attractive at affordable prices and in proven quality.
+<img src="images/monocle.png" ></span></p>
+<button style="width: 30%;" onclick="myFunction()" id="myBtn">Read more</button>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Close"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+      <a href="vynil.html" title="See Article">Open Catalog</a>
+    </article>
+  </div>
+</div>
+</div>
+<footer>
+<span class="right"> VKontakte <img src="images/vk.png" alt= "VK" title="VK"></span><span class="right">Facebook  <img src="images/fc.png" alt= "FC" title="FC"></span>
+ <p>This web site was created to fulfill Web Technologies module’s requirements and does not represent actual company or service.</p>
+</footer>
+</body>
+</html>

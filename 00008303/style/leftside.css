@@ -1,0 +1,31 @@
+.leftside {
+	text-align: center; /*changes place of text to the center of thw page*/
+	float: left; /*content of rightside will float to the left*/
+	width: 240px;
+	height: 670px;
+	margin-top: -352px;
+	padding-top: 0px;
+	padding-left: 3px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+    padding-right: 2px;
+	background-color: #B9A5A5;
+	position: absolute;
+}
+#adv1 {
+	padding-bottom: 2px;
+	padding-top: 30px;
+	}
+span > a {
+	text-decoration: none;
+	color: #4f5d6e; 
+	display: block; 
+}
+span {
+	font-size:18px;
+	}
+span > a:hover:not(.active) { 
+    background-color: #eaeaea;
+	color: #003489;
+}

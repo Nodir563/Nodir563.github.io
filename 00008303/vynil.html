@@ -1,0 +1,102 @@
+</!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <link rel="stylesheet" type="text/css" href="style/vynil.css"><!--connects html document with css file-->
+  <link rel="stylesheet" type="text/css" href="style/logo.css"><!--connects html document with css file-->
+  <link rel="stylesheet" type="text/css" href="style/leftside.css"><!--connects html document with css file-->
+  <link rel="shortcut icon" type="image/x-icon" href="images/icon.png">
+  <title> Vynil</title>
+</head>
+<body>
+  <div id="page-wrap">
+<header>
+<a href="index.html" title="Home" id="logo"> Vynil.com</a>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="images/login.png"></button>
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src=" images/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+        <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<script>
+
+var modal = document.getElementById('id01');
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</header>
+<div id="wrapper">
+  <div id="articles">
+    <article>
+     <a href="scorpions.html"> <img src="images/scorpions.jpg" alt="SCORPIONS" title="SCORPIONS"></a>
+ 	
+    </article>
+    <article>
+    <a href="the beatles.html"><img src="images/the beatles.jpg" alt="THE BEATLES" title="THE BEATLES"></a>
+
+    </article>
+    <article >
+    <a href="ultraviolence.html">  <img src="images/ultraviolence.jpg" alt="ULTRAVIOLENCE" title="ULTRAVIOLENCE"></a>
+
+    </article>
+  </div>
+</div>
+<div id="wrapper">
+  <div id="articles">
+    
+    <article>
+    <a href="daughter.html">  <img src="images/daughter.jpg" alt="DAUGHTER" title="DAUGHTER"></a>
+    </article>
+    <article>
+     <a href="foals.html"> <img src="images/foals.jpg" alt="FOALS" title="FOALS"></a>
+    </article>
+    <article>
+     <a href="elvis presley.html"> <img src="images/ELVIS.jpg" alt="ELVIS" title="ELVIS"></a>
+    </article>
+  </div>
+   <aside>
+   <span class="leftside">
+
+           <a href="https://www.rollingstone.com/music/music-lists/500-greatest-albums-of-all-time-156826/b-b-king-live-in-cook-county-jail-155672/" target="_blank">
+              <img src="images/bestalbums.jpg" style="width:100%" id="adv1" alt="Best_albums_Logo" />
+             See best albums ever!
+           </a>
+           <a href="https://www.rollingstone.com/product-recommendations/electronics/best-record-players-budget-affordable-turntables-780295/" target="_blank">
+              <img src="images/recordplayer.jpg" style="width:100%" id="adv1" alt="Player_Logo" />
+              The Best Affordable Turntables to Buy Online
+          </a>
+
+   </span>
+  </aside>
+</div>
+<footer>
+ <span class="left"> All rights reserved &copy; 2020 </span><span class="right">Social Media <img src="images/vk.png" alt= "VK" title="VK"></span>
+</footer>
+</body>
+</html>
